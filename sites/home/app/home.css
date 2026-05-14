@@ -1,9 +1,9 @@
 /* Navbar */
 .eco-nav {
-  height: 52px;
+  height: 64px;
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  padding: 0 24px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -20,7 +20,7 @@
 
 .eco-nav__logo {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--green);
   letter-spacing: -0.02em;
@@ -30,13 +30,13 @@
 
 .eco-nav__links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   flex: 1;
   justify-content: center;
 }
 
 .eco-nav__links a {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--gray);
   font-weight: 400;
   text-decoration: none;
@@ -50,9 +50,9 @@
 .eco-nav__cta {
   background: var(--green);
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 6px 14px;
+  padding: 8px 20px;
   border-radius: 100px;
   text-decoration: none;
   flex-shrink: 0;
@@ -66,7 +66,7 @@
 /* Hero */
 .eco-hero {
   background: linear-gradient(135deg, #12201a 0%, #1a3d2c 100%);
-  padding: 40px 28px 36px;
+  padding: 80px 60px 72px;
   overflow: hidden;
   position: relative;
 }
@@ -74,23 +74,23 @@
 .eco-hero::before {
   content: "";
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background: rgba(39, 161, 105, 0.12);
   border-radius: 50%;
-  top: -60px;
-  right: 60px;
+  top: -100px;
+  right: 80px;
 }
 
 .eco-hero::after {
   content: "";
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 220px;
+  height: 220px;
   background: rgba(39, 161, 105, 0.12);
   border-radius: 50%;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   opacity: 0.5;
 }
 
@@ -102,35 +102,35 @@
 .eco-hero__tag {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   background: rgba(39, 161, 105, 0.2);
   border: 1px solid rgba(39, 161, 105, 0.35);
   border-radius: 100px;
-  padding: 4px 12px;
-  font-size: 11px;
+  padding: 6px 16px;
+  font-size: 13px;
   font-weight: 500;
   color: #7debb0;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .eco-hero__tag::before {
   content: "";
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #7debb0;
   border-radius: 50%;
 }
 
 .eco-hero__title {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 52px;
   font-weight: 700;
   color: white;
-  line-height: 1.25;
+  line-height: 1.15;
   letter-spacing: -0.03em;
-  max-width: 380px;
-  margin-bottom: 10px;
+  max-width: 640px;
+  margin-bottom: 16px;
 }
 
 .eco-hero__highlight {
@@ -139,31 +139,31 @@
 }
 
 .eco-hero__subtitle {
-  font-size: 13px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.6;
-  max-width: 340px;
-  margin-bottom: 22px;
+  max-width: 520px;
+  margin-bottom: 36px;
 }
 
 .eco-hero__buttons {
   display: flex;
-  gap: 10px;
+  gap: 16px;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 48px;
 }
 
 .eco-hero__btn-primary {
   background: var(--orange);
   color: white;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 9px 18px;
+  padding: 13px 28px;
   border-radius: 100px;
   border: none;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   cursor: pointer;
   transition: background 0.15s ease;
   text-decoration: none;
@@ -178,11 +178,11 @@
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 7px;
   cursor: pointer;
   transition: color 0.15s ease;
   text-decoration: none;
@@ -194,11 +194,11 @@
 }
 
 .eco-hero__stats {
-  margin-top: 28px;
-  padding-top: 20px;
+  margin-top: 0;
+  padding-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
-  gap: 24px;
+  gap: 48px;
 }
 
 .eco-hero__stat {
@@ -207,21 +207,21 @@
 
 .eco-hero__stat-number {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 36px;
   font-weight: 700;
   color: white;
 }
 
 .eco-hero__stat-label {
-  font-size: 11px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.45);
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 /* Stores Section */
 .eco-stores {
   background: var(--surface);
-  padding: 28px 24px;
+  padding: 56px 40px;
 }
 
 .eco-stores .container {
@@ -232,18 +232,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .eco-stores__title {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--dark);
 }
 
 .eco-stores__see-all {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--green);
   font-weight: 500;
   text-decoration: none;
@@ -257,7 +257,7 @@
 .eco-stores__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 16px;
 }
 
 /* Store Card */
@@ -265,7 +265,7 @@
   background: white;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 14px 14px 12px;
+  padding: 20px;
   cursor: pointer;
   transition: border-color 0.2s ease;
 }
@@ -278,44 +278,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   background: var(--green-pale);
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 26px;
+  margin-bottom: 14px;
 }
 
 .eco-store-card__name {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--dark);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .eco-store-card__desc {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--gray);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .eco-store-card__tag {
   display: inline-block;
-  margin-top: 8px;
-  font-size: 10px;
+  margin-top: 12px;
+  font-size: 12px;
   font-weight: 500;
   background: var(--green-pale);
   color: var(--green);
-  padding: 2px 8px;
+  padding: 4px 12px;
   border-radius: 100px;
 }
 
 /* CTA Banner */
 .eco-cta-banner {
-  margin: 0 24px 24px;
+  margin: 0 40px 48px;
   background: var(--green);
   border-radius: var(--radius-lg);
-  padding: 22px 24px;
+  padding: 36px 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -327,23 +327,23 @@
 
 .eco-cta-banner__title {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .eco-cta-banner__subtitle {
-  font-size: 12px;
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.65);
 }
 
 .eco-cta-banner__btn {
   background: white;
   color: var(--green);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 8px 16px;
+  padding: 12px 24px;
   border-radius: 100px;
   white-space: nowrap;
   flex-shrink: 0;
@@ -478,40 +478,40 @@
 }
 
 .eco-sidebar {
-  width: 180px;
+  width: 220px;
   flex-shrink: 0;
   background: var(--dark);
   display: flex;
   flex-direction: column;
-  padding: 18px 0;
+  padding: 20px 0;
   overflow-y: auto;
 }
 
 .eco-sidebar__header {
-  padding: 0 16px 18px;
+  padding: 0 20px 20px;
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: #27a169;
   letter-spacing: -0.02em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .eco-sidebar__sub {
   color: rgba(255, 255, 255, 0.4);
   font-weight: 400;
-  font-size: 11px;
+  font-size: 12px;
   display: block;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .eco-sidebar__switcher {
-  margin: 0 10px 12px;
+  margin: 0 12px 14px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 8px 10px;
+  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -524,33 +524,33 @@
 }
 
 .eco-sidebar__switcher-site {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .eco-sidebar__switcher-domain {
-  font-size: 10px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.35);
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .eco-sidebar__group-label {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.25);
-  padding: 0 16px;
-  margin: 12px 0 4px;
+  padding: 0 20px;
+  margin: 14px 0 4px;
 }
 
 .eco-sidebar__item {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 16px;
-  font-size: 12px;
+  padding: 9px 20px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.55);
   cursor: pointer;
   border-left: 2px solid transparent;
@@ -558,7 +558,7 @@
 }
 
 .eco-sidebar__item i {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .eco-sidebar__item:hover {
@@ -574,16 +574,16 @@
 .eco-topbar {
   background: white;
   border-bottom: 1px solid var(--border);
-  padding: 12px 20px;
+  padding: 14px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 52px;
+  height: 60px;
 }
 
 .eco-topbar__title {
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--dark);
 }
@@ -597,12 +597,12 @@
 .eco-topbar__search {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 7px 12px;
+  font-size: 13px;
   color: var(--gray);
 }
 
@@ -610,21 +610,21 @@
   border: none;
   background: none;
   outline: none;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .eco-topbar__btn {
   background: var(--green);
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 6px 12px;
+  padding: 8px 16px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   transition: background 0.15s ease;
 }
 
@@ -635,26 +635,26 @@
 .eco-main {
   flex: 1;
   overflow-y: auto;
-  padding: 20px;
+  padding: 28px;
 }
 
 /* Metrics */
 .eco-metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 14px;
+  margin-bottom: 24px;
 }
 
 .eco-metric-card {
   background: white;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  padding: 12px 14px;
+  padding: 16px 18px;
 }
 
 .eco-metric-card__label {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--gray);
   font-weight: 500;
   text-transform: uppercase;
@@ -663,14 +663,14 @@
 
 .eco-metric-card__value {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   color: var(--dark);
-  margin: 4px 0 2px;
+  margin: 6px 0 3px;
 }
 
 .eco-metric-card__delta {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .eco-metric-card__delta--positive {
@@ -696,16 +696,16 @@
 .eco-table__header {
   display: flex;
   align-items: center;
-  padding: 12px 14px;
+  padding: 14px 18px;
   border-bottom: 1px solid var(--border);
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .eco-filter-pill {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
-  padding: 4px 10px;
+  padding: 5px 14px;
   border-radius: 100px;
   border: 1px solid var(--border);
   color: var(--gray);
@@ -733,10 +733,10 @@
 .eco-product-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
+  gap: 14px;
+  padding: 14px 18px;
   border-bottom: 1px solid var(--border);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .eco-product-row:last-child {
@@ -744,15 +744,15 @@
 }
 
 .eco-product-row__thumbnail {
-  width: 36px;
-  height: 36px;
-  border-radius: 6px;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
   background: var(--surface);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 22px;
   flex-shrink: 0;
 }
 
@@ -768,7 +768,7 @@
 }
 
 .eco-product-row__meta {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--gray);
 }
 
@@ -781,8 +781,8 @@
 
 .eco-product-row__actions {
   display: flex;
-  gap: 8px;
-  font-size: 16px;
+  gap: 10px;
+  font-size: 18px;
   color: var(--gray);
   transition: color 0.15s ease;
 }

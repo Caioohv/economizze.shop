@@ -26,7 +26,7 @@ export default function RegisterPage() {
     }
 
     setLoading(true);
-    // TODO: Integrar com Supabase Auth
+    // TODO: Integrar com Auth
     console.log("Register attempt:", { name, email, password });
     setLoading(false);
   };

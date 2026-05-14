@@ -11,7 +11,7 @@ export default function LoginPage() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // TODO: Integrar com Supabase Auth
+    // TODO: Integrar com Auth
     console.log("Login attempt:", { email, password });
     setLoading(false);
   };

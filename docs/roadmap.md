@@ -82,8 +82,8 @@ Funcionalidades:
 - Painel admin: React com controle de acesso por roles
 
 ### Backend / Dados
-- Banco de dados: Supabase / PostgreSQL
-- Autenticação: Supabase Auth ou similar
+- Banco de dados: PostgreSQL
+- Autenticação: Projeto próprio
 - Tabelas principais: `sites`, `users`, `user_site_permissions`, `products`, `categories`, `clicks`
 
 ### Automação (futuro)

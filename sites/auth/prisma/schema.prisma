@@ -1,0 +1,58 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  admin
+  user
+}
+
+model User {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name        String
+  email       String   @unique
+  password    String
+  role        Role     @default(user)
+  createdById String?  @map("created_by") @db.Uuid
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  createdBy       User?            @relation("CreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  createdUsers    User[]           @relation("CreatedBy")
+  permissions     UserPermission[] @relation("Permissions")
+  grantedPerms    UserPermission[] @relation("GrantedBy")
+
+  @@map("users")
+}
+
+model Resource {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("resources")
+}
+
+// Permissões granulares por usuário, recurso e ação.
+// site NULL = permissão global (todos os sites).
+// Unicidade por (userId, resource, action, site) é garantida na camada de aplicação.
+model UserPermission {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId      String   @map("user_id") @db.Uuid
+  resource    String
+  action      String
+  site        String?
+  granted     Boolean  @default(true)
+  grantedById String?  @map("granted_by") @db.Uuid
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  user      User  @relation("Permissions", fields: [userId], references: [id], onDelete: Cascade)
+  grantedBy User? @relation("GrantedBy", fields: [grantedById], references: [id], onDelete: SetNull)
+
+  @@map("user_permissions")
+}
